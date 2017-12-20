@@ -5,7 +5,7 @@ import { registerDelegate } from '../utils/api/delegate';
 import { transactionAdded } from './transactions';
 import { errorAlertDialogDisplayed } from './dialog';
 import Fees from '../constants/fees';
-import { toRawLsk } from '../utils/lsk';
+import { toRawOnz } from '../utils/onz';
 import transactionTypes from '../constants/transactionTypes';
 
 /**
@@ -101,14 +101,14 @@ export const delegateRegistered = ({
  */
 export const sent = ({ activePeer, account, recipientId, amount, passphrase, secondPassphrase }) =>
   (dispatch) => {
-    send(activePeer, recipientId, toRawLsk(amount), passphrase, secondPassphrase)
+    send(activePeer, recipientId, toRawOnz(amount), passphrase, secondPassphrase)
       .then((data) => {
         dispatch(transactionAdded({
           id: data.transactionId,
           senderPublicKey: account.publicKey,
           senderId: account.address,
           recipientId,
-          amount: toRawLsk(amount),
+          amount: toRawOnz(amount),
           fee: Fees.send,
           type: transactionTypes.send,
         }));

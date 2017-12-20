@@ -39,7 +39,7 @@ defineSupportCode(({ Before, After }) => {
     browser.driver.manage().window().setSize(1000, 1000);
     browser.get(browser.params.baseURL);
     localStorage.clear();
-    localStorage.setItem('address', browser.params.liskCoreURL);
+    localStorage.setItem('address', browser.params.onzCoreURL);
     localStorage.setItem('network', networks[browser.params.network].code);
     browser.get(browser.params.baseURL);
     callback();

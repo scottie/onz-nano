@@ -37,7 +37,7 @@ class ProxyDialog extends React.Component {
     return (
       <form onSubmit={this.handleSubmit.bind(this)}>
         <p>
-          To connect to Lisk network, you need to enter a username and password for proxy
+          To connect to Onz network, you need to enter a username and password for proxy
           <b> {this.props.authInfo.host} </b>
         </p>
         <Input label={this.props.t('Username')} required

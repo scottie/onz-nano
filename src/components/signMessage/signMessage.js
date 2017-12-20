@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from 'react-toolbox/lib/input';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 
 import InfoParagraph from '../infoParagraph';
 import SignVerifyResult from '../signVerifyResult';
@@ -36,9 +36,9 @@ class SignMessageComponent extends React.Component {
   }
 
   sign(message) {
-    const signedMessage = Lisk.crypto.signMessageWithSecret(message,
+    const signedMessage = Onz.crypto.signMessageWithSecret(message,
       this.state.passphrase.value);
-    const result = Lisk.crypto.printSignedMessage(
+    const result = Onz.crypto.printSignedMessage(
       message, signedMessage, this.props.account.publicKey);
     this.setState({ result });
     return result;

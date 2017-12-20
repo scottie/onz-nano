@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Button from 'react-toolbox/lib/button';
-import { fromRawLsk } from '../../utils/lsk';
+import { fromRawOnz } from '../../utils/onz';
 import styles from './pricedButton.css';
 
 export const PricedButtonComponent = ({
@@ -14,8 +14,8 @@ export const PricedButtonComponent = ({
         fee &&
           (<span className={`${styles.fee} ${hasFunds ? '' : `${styles.error} error-message`} `}>
             {
-              hasFunds ? t('Fee: {{amount}} LSK', { amount: fromRawLsk(fee) }) :
-                t('Insufficient funds for {{amount}} LSK fee', { amount: fromRawLsk(fee) })
+              hasFunds ? t('Fee: {{amount}} ONZ', { amount: fromRawOnz(fee) }) :
+                t('Insufficient funds for {{amount}} ONZ fee', { amount: fromRawOnz(fee) })
             }
           </span>)
       }

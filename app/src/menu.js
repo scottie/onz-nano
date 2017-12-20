@@ -17,15 +17,15 @@ const addAboutMenuForMac = ({ template, name }) => {
 };
 
 const addAboutMenuForNonMac = ({ template, electron }) => {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
+  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} OnzCoin`;
   template[template.length - 1].submenu.push({
     label: i18n.t('About'),
     click(item, focusedWindow) {
       if (focusedWindow) {
         const options = {
           buttons: ['OK'],
-          icon: `${__dirname}/assets/images/LISK.png`,
-          message: `${i18n.t('Lisk Nano')}\n${i18n.t('Version')} ${electron.app.getVersion()}\n${copyright}`,
+          icon: `${__dirname}/assets/images/ONZ.png`,
+          message: `${i18n.t('Onz Nano')}\n${i18n.t('Version')} ${electron.app.getVersion()}\n${copyright}`,
         };
         electron.dialog.showMessageBox(focusedWindow, options, () => {});
       }
@@ -116,31 +116,31 @@ const menu = {
         label: i18n.t('Help'),
         submenu: [
           {
-            label: i18n.t('Lisk Website'),
-            click: menu.onClickLink.bind(null, electron, 'https://lisk.io'),
+            label: i18n.t('Onz Website'),
+            click: menu.onClickLink.bind(null, electron, 'https://onzcoin.com'),
           },
           {
-            label: i18n.t('Lisk Chat'),
-            click: menu.onClickLink.bind(null, electron, 'https://lisk.chat'),
+            label: i18n.t('Onz Chat'),
+            click: menu.onClickLink.bind(null, electron, 'https://onz.chat'),
           },
           {
-            label: i18n.t('Lisk Explorer'),
-            click: menu.onClickLink.bind(null, electron, 'https://explorer.lisk.io'),
+            label: i18n.t('Onz Explorer'),
+            click: menu.onClickLink.bind(null, electron, 'https://explorer.onzcoin.com'),
           },
           {
-            label: i18n.t('Lisk Forum'),
-            click: menu.onClickLink.bind(null, electron, 'https://forum.lisk.io'),
+            label: i18n.t('Onz Forum'),
+            click: menu.onClickLink.bind(null, electron, 'https://forum.onzcoin.com'),
           },
           {
             type: 'separator',
           },
           {
             label: i18n.t('Report Issue...'),
-            click: menu.onClickLink.bind(null, electron, 'https://lisk.zendesk.com/hc/en-us/requests/new'),
+            click: menu.onClickLink.bind(null, electron, 'https://onz.zendesk.com/hc/en-us/requests/new'),
           },
           {
             label: i18n.t('What\'s New...'),
-            click: menu.onClickLink.bind(null, electron, 'https://github.com/LiskHQ/lisk-nano/releases'),
+            click: menu.onClickLink.bind(null, electron, 'https://github.com/OnzCoin/onz-nano/releases'),
           },
         ],
       },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { fromRawLsk } from '../../utils/lsk';
+import { fromRawOnz } from '../../utils/onz';
 import FormattedNumber from '../formattedNumber';
 
 const roundTo = (value, places) => {
@@ -10,8 +10,8 @@ const roundTo = (value, places) => {
   return Math.round(value * x) / x;
 };
 
-const LiskAmount = props => (<FormattedNumber val={
-  roundTo(parseFloat(fromRawLsk(props.val)), props.roundTo)} />);
+const OnzAmount = props => (<FormattedNumber val={
+  roundTo(parseFloat(fromRawOnz(props.val)), props.roundTo)} />);
 
-export default LiskAmount;
+export default OnzAmount;
 

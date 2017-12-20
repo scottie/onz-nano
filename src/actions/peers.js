@@ -1,5 +1,5 @@
 import i18next from 'i18next';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import actionTypes from '../constants/actions';
 import { getNethash } from './../utils/api/nethash';
 import { errorToastDisplayed } from './toaster';
@@ -9,7 +9,7 @@ const peerSet = (data, config) => ({
   data: Object.assign({
     passphrase: data.passphrase,
     publicKey: data.publicKey,
-    activePeer: Lisk.api(config),
+    activePeer: Onz.api(config),
   }),
   type: actionTypes.activePeerSet,
 });
@@ -38,10 +38,10 @@ export const activePeerSet = data =>
       config.port = port || (config.ssl ? 443 : 80);
     }
     if (config.testnet === undefined && config.port !== undefined) {
-      config.testnet = config.port === '7000';
+      config.testnet = config.port === '10998';
     }
     if (config.custom) {
-      getNethash(Lisk.api(config)).then((response) => {
+      getNethash(Onz.api(config)).then((response) => {
         config.testnet = response.nethash === netHashes.testnet;
         if (!config.testnet && response.nethash !== netHashes.mainnet) {
           config.nethash = response.nethash;

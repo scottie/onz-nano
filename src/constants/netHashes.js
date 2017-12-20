@@ -1,6 +1,6 @@
 const netHash = {
-  testnet: 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba',
-  mainnet: 'ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511',
+  testnet: '843351db5e4434c7660035204456c2cb30d362f0fb4aaa30e0c20d6f4d197fda',
+  mainnet: '463aeac28885fa5be9efc4d095900f622e3d9efac8c9317b7f1e8fe804d5a039',
 };
 
 export default netHash;

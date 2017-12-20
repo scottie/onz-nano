@@ -1,7 +1,7 @@
 import { translate } from 'react-i18next';
 import Input from 'react-toolbox/lib/input';
 import React from 'react';
-import lisk from 'lisk-js';
+import onz from 'onz-js';
 
 import InfoParagraph from '../infoParagraph';
 import SignVerifyResult from '../signVerifyResult';
@@ -33,7 +33,7 @@ class VerifyMessage extends React.Component {
     newState.signature.error = '';
     newState.result = '';
     try {
-      newState.result = lisk.crypto.verifyMessageWithPublicKey(
+      newState.result = onz.crypto.verifyMessageWithPublicKey(
         this.state.signature.value, this.state.publicKey.value);
     } catch (e) {
       if (e.message.indexOf('Invalid publicKey') !== -1 && this.state.publicKey.value) {

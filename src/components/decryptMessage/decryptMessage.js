@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from 'react-toolbox/lib/input';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import { translate } from 'react-i18next';
 import ActionBar from '../actionBar';
 import Authenticate from '../authenticate';
@@ -37,7 +37,7 @@ class DecryptMessage extends React.Component {
     event.preventDefault();
     let decryptedMessage = null;
     try {
-      decryptedMessage = Lisk.crypto.decryptMessageWithSecret(
+      decryptedMessage = Onz.crypto.decryptMessageWithSecret(
         this.state.message.value,
         this.state.nonce.value,
         this.props.account.passphrase,

@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import { Provider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next';
 import i18n from '../../i18n'; // initialized i18next instance
@@ -24,7 +24,7 @@ const delegateAccount = {
   address: '16313739661670634666L',
   balance: 1000e8,
   delegate: {
-    username: 'lisk-nano',
+    username: 'onz-nano',
   },
 };
 
@@ -33,14 +33,14 @@ const withSecondSecretAccount = {
   address: '16313739661670634666L',
   balance: 1000e8,
   delegate: {
-    username: 'lisk-nano',
+    username: 'onz-nano',
   },
   secondSignature: 1,
 };
 
 const props = {
   peers: {
-    data: Lisk.api({
+    data: Onz.api({
       name: 'Custom Node',
       custom: true,
       address: 'http://localhost:4000',

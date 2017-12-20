@@ -3,7 +3,7 @@ import { Card, CardText } from 'react-toolbox/lib/card';
 import moment from 'moment';
 import { translate } from 'react-i18next';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import style from './forging.css';
 
 
@@ -21,7 +21,7 @@ class ForgingTitle extends React.Component {
               {this.props.account.delegate.username}
             </h2>
             <span>
-              <LiskAmount val={this.props.statistics.total} roundTo={2} /> {this.props.t('LSK Earned')}
+              <OnzAmount val={this.props.statistics.total} roundTo={2} /> {this.props.t('ONZ Earned')}
             </span>
           </div>
         </CardText>

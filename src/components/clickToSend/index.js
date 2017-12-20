@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './clickToSend.css';
 import RelativeLink from '../relativeLink';
-import { fromRawLsk } from '../../utils/lsk';
+import { fromRawOnz } from '../../utils/onz';
 
 const ClickToSend = ({ rawAmount, amount, className,
   recipient, children, disabled }) => {
-  const normalizedAmount = rawAmount ? fromRawLsk(rawAmount) : amount;
+  const normalizedAmount = rawAmount ? fromRawOnz(rawAmount) : amount;
   const urlParams = new URLSearchParams();
   if (normalizedAmount) {
     urlParams.set('amount', normalizedAmount);

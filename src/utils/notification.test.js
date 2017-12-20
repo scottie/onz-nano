@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { spy } from 'sinon';
-import { fromRawLsk } from './lsk';
+import { fromRawOnz } from './onz';
 import Notification from './notification';
 
 describe('Notification', () => {
@@ -23,12 +23,12 @@ describe('Notification', () => {
 
     it('should call window.Notification', () => {
       window.Notification = mockNotification;
-      const msg = `You've received ${fromRawLsk(amount)} LSK.`;
+      const msg = `You've received ${fromRawOnz(amount)} ONZ.`;
 
       notify.isFocused = false;
       notify.about('deposit', amount);
       expect(mockNotification).to.have.been.calledWith(
-        'LSK received', { body: msg },
+        'ONZ received', { body: msg },
       );
       mockNotification.reset();
     });

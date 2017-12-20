@@ -1,7 +1,7 @@
 import React from 'react';
 import numeral from 'numeral';
 import { translate } from 'react-i18next';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import { TooltipTime, TooltipWrapper } from '../timestamp';
 import TransactionType from './transactionType';
 import styles from './transactions.css';
@@ -41,7 +41,7 @@ class TransactionRow extends React.Component {
       </td>
       <td className={`${props.tableStyle.rowCell} ${styles.centerText}`}>
         <span className={styles.grayButton}>
-          <LiskAmount val={props.value.fee} />
+          <OnzAmount val={props.value.fee} />
         </span>
       </td>
     </tr>

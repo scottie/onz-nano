@@ -57,11 +57,11 @@ describe('actions: peers', () => {
     });
 
     it('dispatch activePeerSet action also when address http missing', () => {
-      const network = { address: 'localhost:8000' };
+      const network = { address: 'localhost:11000' };
 
       activePeerSet({ passphrase, network })(dispatch);
 
-      expect(dispatch).to.have.been.calledWith(match.hasNested('data.activePeer.options.address', 'localhost:8000'));
+      expect(dispatch).to.have.been.calledWith(match.hasNested('data.activePeer.options.address', 'localhost:11000'));
     });
 
     it('dispatch activePeerSet with testnet config set to true when the network is a custom node and nethash is testnet', () => {
@@ -102,11 +102,11 @@ describe('actions: peers', () => {
       expect(dispatch).to.have.been.calledWith();
     });
 
-    it('should set to testnet if not defined in config but port is 7000', () => {
-      const network7000 = { address: 'http://127.0.0.1:7000', nethash };
+    it('should set to testnet if not defined in config but port is 10998', () => {
+      const network10998 = { address: 'http://127.0.0.1:10998', nethash };
       const network4000 = { address: 'http://127.0.0.1:4000', nethash };
 
-      activePeerSet({ passphrase, network: network7000 })(dispatch);
+      activePeerSet({ passphrase, network: network10998 })(dispatch);
       expect(dispatch).to.have.been.calledWith(match.hasNested('data.activePeer.options.testnet', true));
 
       activePeerSet({ passphrase, network: network4000 })(dispatch);

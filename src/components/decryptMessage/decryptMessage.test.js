@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import sinon from 'sinon';
 import { Provider } from 'react-redux';
 import { I18nextProvider } from 'react-i18next';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import i18n from '../../i18n';
 import store from '../../store';
 import DecryptMessage from './decryptMessage';
@@ -30,8 +30,8 @@ describe('DecryptMessage', () => {
     successToastSpy = sinon.spy();
     errorSpy = sinon.spy();
     copyMock = sinon.mock();
-    decryptMessageMock = sinon.stub(Lisk.crypto, 'decryptMessageWithSecret');
-    // decryptMessageSpy = sinon.spy(Lisk.crypto, 'decryptMessageWithSecret');
+    decryptMessageMock = sinon.stub(Onz.crypto, 'decryptMessageWithSecret');
+    // decryptMessageSpy = sinon.spy(Onz.crypto, 'decryptMessageWithSecret');
     const props = {
       account,
       successToast: successToastSpy,

@@ -8,7 +8,7 @@ import { errorAlertDialogDisplayed } from './dialog';
 import * as accountApi from '../utils/api/account';
 import * as delegateApi from '../utils/api/delegate';
 import Fees from '../constants/fees';
-import { toRawLsk } from '../utils/lsk';
+import { toRawOnz } from '../utils/onz';
 import transactionTypes from '../constants/transactionTypes';
 
 describe('actions: account', () => {
@@ -190,7 +190,7 @@ describe('actions: account', () => {
         senderPublicKey: 'test_public-key',
         senderId: 'test_address',
         recipientId: data.recipientId,
-        amount: toRawLsk(data.amount),
+        amount: toRawOnz(data.amount),
         fee: Fees.send,
         type: transactionTypes.send,
       };

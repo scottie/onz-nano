@@ -41,15 +41,15 @@ const realAccount = {
 
 const peers = {
   defaultPeers: [
-    'node01.lisk.io',
-    'node02.lisk.io',
+    'node01.onzcoin.com',
+    'node02.onzcoin.com',
   ],
   defaultSSLPeers: [
-    'node01.lisk.io',
-    'node02.lisk.io',
+    'node01.onzcoin.com',
+    'node02.onzcoin.com',
   ],
   defaultTestnetPeers: [
-    'testnet.lisk.io',
+    'testnet.onzcoin.com',
   ],
   options: {
     name: 'Testnet',
@@ -62,13 +62,13 @@ const peers = {
   randomPeer: true,
   testnet: true,
   bannedPeers: [],
-  currentPeer: 'testnet.lisk.io',
+  currentPeer: 'testnet.onzcoin.com',
   port: 443,
   nethash: {
     'Content-Type': 'application/json',
-    nethash: 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba',
-    broadhash: 'da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba',
-    os: 'lisk-js-api',
+    nethash: '843351db5e4434c7660035204456c2cb30d362f0fb4aaa30e0c20d6f4d197fda',
+    broadhash: '843351db5e4434c7660035204456c2cb30d362f0fb4aaa30e0c20d6f4d197fda',
+    os: 'onz-js-api',
     version: '1.0.0',
     minVersion: '>=0.5.0',
     port: 443,

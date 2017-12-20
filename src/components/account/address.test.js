@@ -20,7 +20,7 @@ describe('Address', () => {
       isDelegate: true,
       address: '16313739661670634666L',
       delegate: {
-        username: 'lisk-nano',
+        username: 'onz-nano',
       },
       t: key => key,
     };
@@ -34,11 +34,11 @@ describe('Address', () => {
       isDelegate: true,
       address: '16313739661670634666L',
       delegate: {
-        username: 'lisk-nano',
+        username: 'onz-nano',
       },
       t: key => key,
     };
-    const expectedValue = 'lisk-nano';
+    const expectedValue = 'onz-nano';
     const wrapper = shallow(<Address {...inputValue} />);
     expect(wrapper.find('p.primary').text()).to.be.equal(expectedValue);
   });

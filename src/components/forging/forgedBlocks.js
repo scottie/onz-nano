@@ -4,7 +4,7 @@ import { Table, TableHead, TableRow, TableCell } from 'react-toolbox/lib/table';
 import { translate } from 'react-i18next';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import { TooltipTime } from '../timestamp';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import FormattedNumber from '../formattedNumber';
 import style from './forging.css';
 
@@ -29,8 +29,8 @@ const ForgedBlocks = props => (
               <TableCell><FormattedNumber val={block.height} /></TableCell>
               <TableCell>{block.id}</TableCell>
               <TableCell><TooltipTime label={block.timestamp} /></TableCell>
-              <TableCell><LiskAmount val={block.totalFee} roundTo={2} /></TableCell>
-              <TableCell><LiskAmount val={block.reward} roundTo={2} /></TableCell>
+              <TableCell><OnzAmount val={block.totalFee} roundTo={2} /></TableCell>
+              <TableCell><OnzAmount val={block.reward} roundTo={2} /></TableCell>
             </TableRow>
           ))}
         </Table>

@@ -23,8 +23,8 @@ app.on('window-all-closed', () => {
 
 // This will override the values defined in the app’s .plist file (macOS)
 if (process.platform === 'darwin') {
-  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} Lisk Foundation`;
-  app.setAboutPanelOptions({ applicationName: 'Lisk Nano', copyright });
+  const copyright = `Copyright © 2016 - ${new Date().getFullYear()} OnzCoin`;
+  app.setAboutPanelOptions({ applicationName: 'Onz Nano', copyright });
 }
 
 app.on('activate', () => {
@@ -34,7 +34,7 @@ app.on('activate', () => {
 });
 
 // Set app protocol
-app.setAsDefaultProtocolClient('lisk');
+app.setAsDefaultProtocolClient('onz');
 
 // Force single instance application
 const isSecondInstance = app.makeSingleInstance((argv) => {

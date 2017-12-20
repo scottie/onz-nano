@@ -20,7 +20,7 @@ storiesOf('Send', module)
     </Provider>
   ))
   .add('pre-filled recipient and amount', () => (
-    <Send recipient='11004588490103196952L' amount='100' account={account} activePeer={{}} />
+    <Send recipient='11004588490103196952Z' amount='100' account={account} activePeer={{}} />
   ))
   .add('without pre-filles', () => (
     <Send account={account} activePeer={{}} />

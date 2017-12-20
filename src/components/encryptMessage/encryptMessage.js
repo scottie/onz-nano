@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from 'react-toolbox/lib/input';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import { translate } from 'react-i18next';
 import ActionBar from '../actionBar';
 import Authenticate from '../authenticate';
@@ -35,7 +35,7 @@ class EncryptMessage extends React.Component {
     event.preventDefault();
     let cryptoResult = null;
     try {
-      cryptoResult = Lisk.crypto.encryptMessageWithSecret(
+      cryptoResult = Onz.crypto.encryptMessageWithSecret(
         this.state.message.value,
         this.props.account.passphrase,
         this.state.recipientPublicKey.value);
@@ -44,14 +44,14 @@ class EncryptMessage extends React.Component {
     }
     if (cryptoResult) {
       const result = [
-        '-----BEGIN LISK ENCRYPTED MESSAGE-----',
+        '-----BEGIN ONZ ENCRYPTED MESSAGE-----',
         '-----SENDER PUBLIC KEY-----',
         this.props.account.publicKey,
         '-----ENCRYPTED MESSAGE-----',
         cryptoResult.encryptedMessage,
         '-----NONCE-----',
         cryptoResult.nonce,
-        '-----END LISK ENCRYPTED MESSAGE-----',
+        '-----END ONZ ENCRYPTED MESSAGE-----',
       ].join('\n');
       this.setState({ result });
       this.showResult(result);

@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import { mount } from 'enzyme';
 import sinon from 'sinon';
 import PropTypes from 'prop-types';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import i18n from '../../i18n';
 import store from '../../store';
 import Authenticate from '../authenticate';
@@ -23,7 +23,7 @@ describe('EncryptMessage', () => {
   };
 
   beforeEach(() => {
-    encryptMessageSpy = sinon.spy(Lisk.crypto, 'encryptMessageWithSecret');
+    encryptMessageSpy = sinon.spy(Onz.crypto, 'encryptMessageWithSecret');
     props = {
       account,
       successToast: sinon.spy(),

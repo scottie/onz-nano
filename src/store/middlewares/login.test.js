@@ -1,4 +1,4 @@
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import { expect } from 'chai';
 import { spy, stub } from 'sinon';
 import middleware from './login';
@@ -10,7 +10,7 @@ describe('Login middleware', () => {
   let store;
   let next;
   const passphrase = 'wagon stock borrow episode laundry kitten salute link globe zero feed marble';
-  const activePeer = Lisk.api({
+  const activePeer = Onz.api({
     name: 'Custom Node',
     custom: true,
     address: 'http://localhost:4000',

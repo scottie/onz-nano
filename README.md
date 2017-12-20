@@ -1,16 +1,16 @@
-# Lisk Nano
+# Onz Nano
 
-[![Build Status](https://jenkins.lisk.io/buildStatus/icon?job=lisk-nano/development)](https://jenkins.lisk.io/job/lisk-nano/job/development)
-[![Coverage Status](https://coveralls.io/repos/github/LiskHQ/lisk-nano/badge.svg?branch=development)](https://coveralls.io/github/LiskHQ/lisk-nano?branch=development)
+[![Build Status](https://jenkins.onzcoin.com/buildStatus/icon?job=onz-nano/development)](https://jenkins.onzcoin.com/job/onz-nano/job/development)
+[![Coverage Status](https://coveralls.io/repos/github/OnzCoin/onz-nano/badge.svg?branch=development)](https://coveralls.io/github/OnzCoin/onz-nano?branch=development)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-[![Join the chat at https://gitter.im/LiskHQ/lisk](https://badges.gitter.im/LiskHQ/lisk.svg)](https://gitter.im/LiskHQ/lisk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![devDependencies Status](https://david-dm.org/liskHQ/lisk-nano/dev-status.svg)](https://david-dm.org/liskHQ/lisk-nano?type=dev)
+[![Join the chat at https://gitter.im/OnzCoin/onz](https://badges.gitter.im/OnzCoin/onz.svg)](https://gitter.im/OnzCoin/onz?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![devDependencies Status](https://david-dm.org/onzHQ/onz-nano/dev-status.svg)](https://david-dm.org/onzHQ/onz-nano?type=dev)
 
 ## Development
 
 ```
-git clone https://github.com/LiskHQ/lisk-nano.git
-cd lisk-nano
+git clone https://github.com/OnzCoin/onz-nano.git
+cd onz-nano
 npm install
 npm run dev
 ```
@@ -102,22 +102,22 @@ Setup protractor
 ./node_modules/protractor/bin/webdriver-manager update
 ```
 
-Setup a lisk test node to run on localhost:4000 as described in https://github.com/LiskHQ/lisk#tests
+Setup a onz test node to run on localhost:4000 as described in https://github.com/OnzCoin/onz#tests
 
 And run it with [pm2](http://pm2.keymetrics.io/).
 
 ### Run
 
-Start the development version of lisk-nano:
+Start the development version of onz-nano:
 
 ```
 npm run dev
 ```
 
-Run the protractor tests (replace `~/git/lisk/` with your path to lisk core):
+Run the protractor tests (replace `~/git/onz/` with your path to onz core):
 
 ```
-./e2e-test-setup.sh ~/git/lisk/
+./e2e-test-setup.sh ~/git/onz/
 npm run e2e-test
 ```
 
@@ -144,19 +144,19 @@ http://localhost:6006/
 
 ## License
 
-Copyright © 2016-2017 Lisk Foundation
+Copyright © 2016-2017 OnzCoin
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the [GNU General Public License](https://github.com/LiskHQ/lisk-nano/tree/master/LICENSE) along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the [GNU General Public License](https://github.com/OnzCoin/onz-nano/tree/master/LICENSE) along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ***
 
-This program also incorporates work previously released with lisk-nano `0.1.2` (and earlier) versions under the [MIT License](https://opensource.org/licenses/MIT). To comply with the requirements of that license, the following permission notice, applicable to those parts of the code only, is included below:
+This program also incorporates work previously released with onz-nano `0.1.2` (and earlier) versions under the [MIT License](https://opensource.org/licenses/MIT). To comply with the requirements of that license, the following permission notice, applicable to those parts of the code only, is included below:
 
-Copyright © 2016-2017 Lisk Foundation
+Copyright © 2016-2017 OnzCoin
 Copyright © 2015 Crypti
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

@@ -2,9 +2,9 @@ import React from 'react';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
 import styles from './account.css';
 import Address from './address';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import ClickToSend from '../clickToSend';
-import { toRawLsk } from '../../utils/lsk';
+import { toRawOnz } from '../../utils/onz';
 
 /**
  * Contains some of the important and basic information about the account
@@ -57,10 +57,10 @@ const Account = ({
             </div>
             <div className={`${grid['col-sm-12']} ${grid['col-xs-8']}`}>
               <ClickToSend
-                rawAmount={Math.max(0, account.balance - toRawLsk(0.1))} >
+                rawAmount={Math.max(0, account.balance - toRawOnz(0.1))} >
                 <div className={styles['value-wrapper']}>
                   <p className="inner primary full hasTip balance-value">
-                    <LiskAmount val={account.balance} /> LSK
+                    <OnzAmount val={account.balance} /> ONZ
                   </p>
                   <p className="inner secondary tooltip">
                     {t('Click to send all funds')}

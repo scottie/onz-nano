@@ -3,7 +3,7 @@ import { Card, CardText } from 'react-toolbox/lib/card';
 import moment from 'moment';
 import { translate } from 'react-i18next';
 import grid from 'flexboxgrid/dist/flexboxgrid.css';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import style from './forging.css';
 
 const statCardObjects = [
@@ -44,8 +44,8 @@ class ForgingStats extends React.Component {
                   <div className={`${grid.row}  ${grid['between-xs']}`}>
                     <span className='title'> {cardObj.label} </span>
                     <span>
-                      <LiskAmount val={this.props.statistics[cardObj.key]}
-                        roundTo={2} /> LSK
+                      <OnzAmount val={this.props.statistics[cardObj.key]}
+                        roundTo={2} /> ONZ
                     </span>
                   </div>
                 </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { translate } from 'react-i18next';
 import styles from './transactions.css';
-import LiskAmount from '../liskAmount';
+import OnzAmount from '../onzAmount';
 import { TooltipWrapper } from '../timestamp';
 import ClickToSend from '../clickToSend';
 import transactionTypes from '../../constants/transactionTypes';
@@ -25,7 +25,7 @@ const Amount = (props) => {
       recipient={props.value.recipientId}
       disabled={!params.clickToSendEnabled}>
       <span id='transactionAmount' className={styles[params.className]}>
-        <LiskAmount val={props.value.amount} />
+        <OnzAmount val={props.value.amount} />
       </span>
     </ClickToSend>
   </TooltipWrapper>;

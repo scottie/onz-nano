@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .body-wrapper {
@@ -38,6 +38,7 @@ body {
   background-color: #fff;
   padding: 16px;
   box-sizing: border-box;
+  border-radius: 4px;
 
   &.noPaddingBox {
     padding: 16px 0;

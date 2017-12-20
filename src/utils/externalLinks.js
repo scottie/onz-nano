@@ -10,7 +10,7 @@ export default {
 
     if (ipc) {
       ipc.on('openUrl', (action, url) => {
-        const normalizedUrl = url.toLowerCase().replace('lisk://', '/');
+        const normalizedUrl = url.toLowerCase().replace('onz://', '/');
         const route = routesReg.find(item => item.regex.test(normalizedUrl));
         if (route !== undefined) {
           history.push(normalizedUrl);

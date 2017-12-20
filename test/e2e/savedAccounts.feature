@@ -21,7 +21,7 @@ Feature: Saved Accounts
     And I fill in "2" to "amount" field
     And I fill in "537318935439898807L" to "recipient" field
     And I click "submit button"
-    And I should see alert dialog with title "Success" and text "Your transaction of 2 LSK to 537318935439898807L was accepted and will be processed in a few seconds."
+    And I should see alert dialog with title "Success" and text "Your transaction of 2 ONZ to 537318935439898807L was accepted and will be processed in a few seconds."
 
   Scenario: should allow to save second account
     Given I'm logged in as "genesis"

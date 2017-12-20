@@ -4,7 +4,7 @@ import { spy } from 'sinon';
 import { mount, shallow } from 'enzyme';
 import { BrowserRouter as Router } from 'react-router-dom';
 import configureMockStore from 'redux-mock-store';
-import Lisk from 'lisk-js';
+import Onz from 'onz-js';
 import PropTypes from 'prop-types';
 import i18n from '../../i18n';
 import Login from './login';
@@ -17,7 +17,7 @@ describe('Login', () => {
   const account = {
     isDelegate: false,
     address: '16313739661670634666L',
-    username: 'lisk-nano',
+    username: 'onz-nano',
   };
   const peers = { data: {} };
   const store = configureMockStore([])({
@@ -41,7 +41,7 @@ describe('Login', () => {
     onAccountUpdated: () => {},
     setActiveDialog: spy(),
     activePeerSet: (network) => {
-      props.peers.data = Lisk.api(network);
+      props.peers.data = Onz.api(network);
     },
   };
   const options = {
