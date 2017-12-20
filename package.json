@@ -27,7 +27,7 @@
     "storybook": "start-storybook -p 6006 -s ./src/",
     "build-storybook": "build-storybook"
   },
-  "author": "OnzCoin <hi@onzcoin.com>, lightcurve GmbH <admin@lightcurve.io>",
+  "author": "OnzCoin <hi@onzcoin.com>",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
