@@ -29,6 +29,11 @@ const languages = {
     common: require('./locales/es/common.json'),
     flag: require('./flags/es.png'),
   },
+  pt: {
+    name: 'Portuguese',
+    common: require('./locales/pt/common.json'),
+    flag: require('./flags/pt.png'),
+  },
   ru: {
     name: 'Russian',
     common: require('./locales/ru/common.json'),
