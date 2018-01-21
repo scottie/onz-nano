@@ -3,7 +3,7 @@
   "version": "1.3.1",
   "description": "Onz Nano",
   "main": "./build/main.js",
-  "author":{
+  "author": {
     "name": "OnzCoin",
     "email": "hi@onzcoin.com"
   }
