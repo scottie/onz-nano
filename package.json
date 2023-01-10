@@ -37,7 +37,7 @@
     "bignumber.js": "4.0.4",
     "bitcore-mnemonic": "1.2.5",
     "copy-to-clipboard": "3.0.8",
-    "electron-localshortcut": "^2.0.2",
+    "electron-localshortcut": "^3.2.0",
     "flexboxgrid": "=6.3.1",
     "hard-source-webpack-plugin": "0.4.11",
     "history": "=4.7.2",
@@ -65,7 +65,7 @@
     "redux": "3.7.2",
     "redux-logger": "=3.0.6",
     "redux-thunk": "=2.2.0",
-    "socket.io-client": "=2.0.3",
+    "socket.io-client": "2.1.0",
     "webpack-merge": "=4.1.0"
   },
   "devDependencies": {
