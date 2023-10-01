@@ -47,7 +47,7 @@
     "moment": "2.18.1",
     "numeral": "=2.0.6",
     "onz-js": "git+https://github.com/OnzCoin/onz-js.git",
-    "postcss": "6.0.12",
+    "postcss": "8.4.31",
     "postcss-cssnext": "2.11.0",
     "prop-types": "=15.5.10",
     "qrcode.react": "0.7.2",
