@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "bignumber.js": "4.0.4",
-    "bitcore-mnemonic": "1.2.5",
+    "bitcore-mnemonic": "8.1.0",
     "copy-to-clipboard": "3.0.8",
     "electron-localshortcut": "^2.0.2",
     "flexboxgrid": "=6.3.1",
@@ -48,7 +48,7 @@
     "numeral": "=2.0.6",
     "onz-js": "git+https://github.com/OnzCoin/onz-js.git",
     "postcss": "6.0.12",
-    "postcss-cssnext": "2.11.0",
+    "postcss-cssnext": "3.1.1",
     "prop-types": "=15.5.10",
     "qrcode.react": "0.7.2",
     "react": "=16.0.0",
@@ -65,7 +65,7 @@
     "redux": "3.7.2",
     "redux-logger": "=3.0.6",
     "redux-thunk": "=2.2.0",
-    "socket.io-client": "=2.0.3",
+    "socket.io-client": "2.2.0",
     "webpack-merge": "=4.1.0"
   },
   "devDependencies": {
